@@ -47,7 +47,7 @@ Turn a rough description into a well-structured GitHub issue. The skill formats 
 ## issue template
 
 ```markdown
-## 🤔 Problem
+## 🎯 Problem
 
 <one paragraph — why this matters, what pain it addresses>
 
