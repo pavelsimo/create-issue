@@ -11,7 +11,7 @@ Turn a rough description into a well-structured GitHub issue. The skill formats 
 ## features
 
 - auto-detects issue type (`feat`, `bug`, `chore`, `refactor`, `perf`, `docs`, `test`, `security`, `ui`) from keywords and prefixes the title with the matching gitmoji
-- builds a structured body: Problem, Description, Acceptance Criteria, Steps to Reproduce (bugs only), Technical Notes (optional)
+- builds a structured body: 🎯 Problem, 📋 Description, ✅ Acceptance Criteria, 🔁 Steps to Reproduce (bugs only), 💡 Technical Notes (optional)
 - `--interview` mode reads `git ls-files`, README, and key entry-point files before asking targeted questions
 - shows a full preview before posting — user can accept, edit, or cancel
 - `--dry-run` prints the `gh issue create` command without executing it
@@ -82,11 +82,11 @@ Turn a rough description into a well-structured GitHub issue. The skill formats 
    - run `git ls-files` to understand project structure
    - read README and 2–3 key entry-point files for context
    - ask in sequence:
-     - "What problem are you solving?" → Problem section
+     - "What problem are you solving?" → 🎯 Problem section
      - "Is this a bug, feature, chore, or other?" → determines issue type and gitmoji
-     - "Which files or areas of the codebase does this touch?" → informs Technical Notes
-     - "What does done look like? List acceptance criteria." → Acceptance Criteria
-     - "Any implementation hints or constraints? (press enter to skip)" → Technical Notes
+     - "Which files or areas of the codebase does this touch?" → informs 💡 Technical Notes
+     - "What does done look like? List acceptance criteria." → ✅ Acceptance Criteria
+     - "Any implementation hints or constraints? (press enter to skip)" → 💡 Technical Notes
    - build the full template from answers
 
 3. **direct / interactive mode**:
@@ -106,7 +106,7 @@ Turn a rough description into a well-structured GitHub issue. The skill formats 
    - ask for acceptance criteria if none found in description
    - ask "Any technical notes? (press enter to skip)"
 
-4. **build template**: fill all sections; omit Steps to Reproduce for non-bug types; omit Technical Notes if the user skipped; prefix title with matched gitmoji
+4. **build template**: fill all sections; omit 🔁 Steps to Reproduce for non-bug types; omit 💡 Technical Notes if the user skipped; prefix title with matched gitmoji
 
 5. **show preview**: print the full title + body and ask:
    `Create this issue? [yes / edit / cancel]`
